@@ -19,6 +19,10 @@ app.MapGet("/hello/{name}", (string name, string? language) => {
     var message = string.Equals(language, "en", StringComparison.OrdinalIgnoreCase)
         ? $"Hello, {name}!"
         : $"Xin chào, {name}!";
+    
+    var temp = string.Equals(language,"ja", StringComparison.OrdinalIgnoreCase)
+        ? message = $"Konnichiwa, {name}!" 
+        : message = $"Xin chào, {name}!";
 
     return Results.Ok(new GreetingResponse(message));
 });

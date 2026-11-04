@@ -8,7 +8,8 @@ var app = builder.Build();
 var assignments = new[]
 {
     new Assignment(1, "Bai tap 1", "Tao API dau tien"),
-    new Assignment(2, "Bai tap 2", "Goi API tu client")
+    new Assignment(2, "Bai tap 2", "Goi API tu client"),
+    new Assignment(3, "Bai tap 3", "Hoan thanh goi API tu client")
 };
 
 // GET / : kiểm tra dịch vụ đang chạy

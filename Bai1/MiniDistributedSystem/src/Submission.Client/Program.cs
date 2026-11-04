@@ -21,7 +21,7 @@ foreach (var assignment in assignments ?? new List<Assignment>()) {
 // Yêu cầu 2: POST /api/submissions
 var request = new CreateSubmissionRequest(
     AssignmentId: 1,
-    StudentCode: "SV001",
+    StudentCode: "",
     RepositoryUrl: "https://example.com/sv001/bai-tap-1");
 
 var response = await http.PostAsJsonAsync("/api/submissions", request);

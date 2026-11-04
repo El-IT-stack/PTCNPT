@@ -1,4 +1,4 @@
-@api = http://localhost:5081
+@api = http://localhost:5000
 
 ### Kiểm tra API đang chạy → 200
 GET {{api}}/
@@ -8,6 +8,9 @@ GET {{api}}/hello/An?language=vi
 
 ### Chào tiếng Anh → 200
 GET {{api}}/hello/An?language=en
+
+### Chào tiếng Nhật → 200
+GET {{api}}/hello/An?language=ja
 
 ### Tạo lời chào hợp lệ → 201 Created + header Location
 POST {{api}}/greetings
